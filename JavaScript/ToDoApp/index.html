@@ -4,12 +4,12 @@
     <title>TODO</title>
     <meta charset="UTF-8">
     <script>
-      async function loadTodoItems() {
+      /* async function loadTodoItems() {
         const response = await fetch('http://localhost:3000/api/todos');
         const data = await response.json();
         console.log(data);
       }
-
+      
       async function createTodoItem() {
         const response = await fetch('http://localhost:3000/api/todos', {
           method: 'POST',
@@ -22,15 +22,16 @@
         const data = await response.json();
         console.log(data);
       }
+      
 
       async function getTodoItem() {
-        const response = await fetch('http://localhost:3000/api/todos/1608029025426');
+        const response = await fetch('http://localhost:3000/api/todos/1624380407820');
         const data = await response.json();
         console.log(data);
       }
 
       async function markTodoAsDone() {
-        const response = await fetch('http://localhost:3000/api/todos/1608029025426', {
+        const response = await fetch('http://localhost:3000/api/todos/1624380407820', {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ done: true })
@@ -38,18 +39,22 @@
         const data = await response.json();
         console.log(data);
       }
-
+      
       async function deleteTodoItem() {
-        const response = await fetch('http://localhost:3000/api/todos/1608029025426', {
+        const response = await fetch('http://localhost:3000/api/todos/1624380407820', {
           method: 'DELETE',
         });
         if (response.status === 404)
           console.log('Cannot delete,because task does not exist');
         const data = await response.json();
         console.log(data);
-      }
+      } */
+      
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script defer src="todo-app.js"></script>
   </head>
   <body>
+    <div id="todo-app" class="container mt-5"></div>
   </body>
 </html>

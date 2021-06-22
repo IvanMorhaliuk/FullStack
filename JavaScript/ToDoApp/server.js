@@ -56,8 +56,8 @@ function makeTodoItemFromData(data) {
   };
 
   // checking if all data is correct and filling error messages if not 
-  if (!todoItem.owner) errors.push({ field: 'owner', message: 'Не указан ответственный' });
-  if (!todoItem.name) errors.push({ field: 'name', message: 'Не указан заголовок задачи' });
+  if (!todoItem.owner) errors.push({ field: 'owner', message: 'There is no owner' });
+  if (!todoItem.name) errors.push({ field: 'name', message: 'There is no Task title' });
   if (!todoItem.done) todoItem.done = false;
 
   // if errors are found , then throws 442 error
